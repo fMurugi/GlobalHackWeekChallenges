@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paasowrd generator</title>
+</head>
+<body style="text-align: center;">
+    <h1>click the button to generate a password</h1>
+    <button onclick = "generatePassword()">click here</button>
+    <h2 id ="myPassword" style="color:green" ></h2>
+
+    <script>
+    var showPass = document.getElementById("myPassword");
+    function generatePassword(){
+        showPass.innerHTML  = Math.random().toString(36).slice(2)
+    }
+</script>
+</body>
+
+</html>
